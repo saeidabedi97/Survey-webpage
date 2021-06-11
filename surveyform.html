@@ -15,6 +15,7 @@
 
         #title{
             color: aliceblue;
+            font-size: 45px;
         }
 
         #description{
@@ -23,6 +24,9 @@
         #survey-form{
             color: aliceblue;
             font-size: 25px;
+            padding: 10px;
+            display:grid;
+            justify-items: center;
         }
 
         #header{
@@ -46,13 +50,13 @@
         <div id="main">
             <form id="survey-form">
                 <label for="firstname" id="name-label">Name</label><br>
-                <input type="text" name="firstname" value="e.g John" id="name" title="first name"><br>
+                <input type="text" name="firstname"  id="name" placeholder="first name" required><br>
                 <label for="lastname">Lastname</label><br>
-                <input type="text" name="lastname" value="e.g Wick" ><br>
-                <label for="email" id="email-label">Email</label><br>
-                <input type="text" name="Email" value="e.g 123@gmail.com" id="email" title="email"><br>
-                <label for="Age" id="number-label">Age</label><br>
-                <input type="text" name="Age" value="e.g 23" id="number" title="Enter Age"><br>
+                <input type="text" name="lastname"  placeholder="lastname" required><br>
+                <label for="email" id="email-label" >Email</label><br>
+                <input type="email" name="Email"  id="email" placeholder="email" required><br>
+                <label for="Age" id="number-label" pattern="[0-9]+" >Age</label><br>
+                <input type="number" name="Age"  id="number" placeholder="Enter Age" min="15" max="75" required><br>
                 
                 <label for="jobs">What is your job?</label><br>
                 <select name="Job" id="dropdown">
@@ -65,11 +69,11 @@
                 </select> <br>
 
                 <label for="work-exprience">How many years of work exprience?</label><br>
-                <input type="radio" name="option1">
+                <input type="radio" name="option1" value="zerotoone" multiple>
                 <label for="option1">0-1</label><br>
-                <input type="radio" name="option2">
+                <input type="radio" name="option1" value="onetothree" multiple>
                 <label for="option2">1-3</label><br>
-                <input type="radio" name="option3">
+                <input type="radio" name="option1" value="threeormore" multiple>
                 <label for="option3">3 or more</label><br>
 
 
@@ -88,10 +92,10 @@
                 <label for="Automation">Automation</label><br>
 
 
-                <label for="comment">Any comment??</label><br>
-                <input type="text-area" id="suggestions">
+                <label for="comment" >Any comment??</label><br>
+                <textarea name="suggestions" rows="4" cols="6"> </textarea>
 
-                <input type="button" id="submit" value="submit">
+                <input type="submit" value="Submit" id="submit">                
             </form>
 
         </div>
