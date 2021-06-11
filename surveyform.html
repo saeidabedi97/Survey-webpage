@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        body{
+            background-color: #305E5E;
+        }
+
+        #main{
+            background-color: #122235;
+            display: grid;
+            grid-row: auto;
+            justify-items: center;
+        }
+
+        #title{
+            color: aliceblue;
+        }
+
+        #description{
+            color: aliceblue;
+        }
+        #survey-form{
+            color: aliceblue;
+            font-size: 25px;
+        }
+
+        #header{
+            display: grid;
+            grid-template-rows: auto auto;
+            justify-items: center;
+
+        }
+        #jobs{
+            background-color: blue;
+        }
+        
+       
+    </style>
+    </head>
+    <body>
+        <div id="header">
+        <h1 id="title">Survey form </h1>
+        <p id="description">your opinion is important for us</p>
+        </div>
+        <div id="main">
+            <form id="survey-form">
+                <label for="firstname" id="name-label">Name</label><br>
+                <input type="text" name="firstname" value="e.g John" id="name" title="first name"><br>
+                <label for="lastname">Lastname</label><br>
+                <input type="text" name="lastname" value="e.g Wick" ><br>
+                <label for="email" id="email-label">Email</label><br>
+                <input type="text" name="Email" value="e.g 123@gmail.com" id="email" title="email"><br>
+                <label for="Age" id="number-label">Age</label><br>
+                <input type="text" name="Age" value="e.g 23" id="number" title="Enter Age"><br>
+                
+                <label for="jobs">What is your job?</label><br>
+                <select name="Job" id="dropdown">
+                <option value="Student" id="options" >Student</option>
+                <option value="IT-assistant">IT-assistant</option>
+                <option value="IT-manager">IT-manager</option>
+                <option value="unemployed">unemployed</option>
+                <option value="software-developer">software-developer</option>
+                <option value="others">others</option>
+                </select> <br>
+
+                <label for="work-exprience">How many years of work exprience?</label><br>
+                <input type="radio" name="option1">
+                <label for="option1">0-1</label><br>
+                <input type="radio" name="option2">
+                <label for="option2">1-3</label><br>
+                <input type="radio" name="option3">
+                <label for="option3">3 or more</label><br>
+
+
+                <label for="industry">Which industries would you like to work on?</label><br>
+                <input type="checkbox" name="datascience" value="datascience">
+                <label for="datascience">datascience</label><br>
+                <input type="checkbox" name="machinelearning" value="machinelearning">
+                <label for="machinelearning">machinelearning</label><br>
+                <input type="checkbox" name="software-development" value="software-development">
+                <label for="software-development">software-development</label><br>
+                <input type="checkbox" name="webdevelopment" value="webdevelopment">
+                <label for="webdevelopment">web development</label><br>
+                <input type="checkbox" name="information-security" value="informationsecurity">
+                <label for="information-security">information security</label><br>
+                <input type="checkbox" name="Automation" value="Automation">
+                <label for="Automation">Automation</label><br>
+
+
+                <label for="comment">Any comment??</label><br>
+                <input type="text-area" id="suggestions">
+
+                <input type="button" id="submit" value="submit">
+            </form>
+
+        </div>
+        
+    </body>
+
+
+</html>
